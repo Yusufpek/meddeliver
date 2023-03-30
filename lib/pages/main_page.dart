@@ -23,6 +23,10 @@ class _MainPageState extends State<MainPage> {
     switch (currentPage) {
       case Pages.HOME:
         return const HomePage();
+      case Pages.PROFILE:
+        return const Center(child: Text("Profile Page"));
+      case Pages.HEALTH:
+        return const Center(child: Text("Health Page"));
       default:
         return const Text("no page");
     }
