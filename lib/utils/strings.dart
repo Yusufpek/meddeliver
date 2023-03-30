@@ -1,5 +1,5 @@
 class Strings {
   static const title = "Meddeliver";
-  static const appointmentTitle = "Appointments";
-  static const welcomText = "Have a good day :)";
+  static const appointmentTitle = "Recent appointments";
+  static const welcomText = "Good\nAfternoon,\n";
 }

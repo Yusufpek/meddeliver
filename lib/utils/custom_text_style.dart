@@ -9,4 +9,11 @@ class CustomTextStyle {
   }
 
   final TextStyle bigTitle = const TextStyle(fontSize: 32);
+
+  final TextStyle welcomeTextStyle = const TextStyle(
+    fontSize: 48,
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  );
 }

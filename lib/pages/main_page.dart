@@ -32,8 +32,6 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: customAppBar(),
-        //Adding SpinCircleBottomBarHolder to body of Scaffold
         body: SpinCircleBottomBarHolder(
           bottomNavigationBar: SCBottomBarDetails(
             circleColors: [Colors.white, Colors.green, Colors.green[900]!],
@@ -85,14 +83,5 @@ class _MainPageState extends State<MainPage> {
 
   Widget circleAvatarWidget() => CircleAvatar(
         child: Image.network(ConstantImages.getInstance().profilePictureHint),
-      );
-
-  AppBar customAppBar() => AppBar(
-        elevation: 0,
-        backgroundColor: const Color(0xff00FB83),
-        leading: const Icon(Icons.calendar_today_outlined),
-        actions: [
-          circleAvatarWidget(),
-        ],
       );
 }
